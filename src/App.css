@@ -16,7 +16,7 @@
 }
 
 .navBarLogo{
-  width: 20%;
+  width: 10%;
 }
 
 .logoNavBar{
@@ -30,13 +30,26 @@
   justify-content: end;
 }
 
-.navBarLinks button {
-  padding: 0px 25px;
+.collapseButton{
+  border: white;
+  color: white;
 }
+
+.navbar-toggler {
+  filter: invert(60%) sepia(14%) saturate(6441%) hue-rotate(354deg) brightness(102%) contrast(105%);
+}
+
+.navbar-toggler-icon{
+  color: white;
+  border: solid white 3px;
+  border-radius: 25%;
+}
+
 
 /* NAVBAR BUTTON */
 
 .buttonNavBar {
+  padding: 0px 25px;
   font-size: 18px;
   color: #e1e1e1;
   font-family: inherit;
@@ -78,3 +91,9 @@
 }
 
 /*   NAVBAR BUTTON END */
+
+
+.firstPart{
+  display: flex;
+  
+}
