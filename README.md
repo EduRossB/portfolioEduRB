@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Portfolio Personal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Hola! Bienvenido a mi portfolio personal, un espacio donde comparto algunos de mis proyectos y habilidades como desarrollador. Aquí encontrarás una breve descripción sobre mí y los enlaces a los diferentes proyectos que he realizado.
 
-## Available Scripts
+## Contenido
 
-In the project directory, you can run:
+- [Demo](#demo)
+- [Sobre Mí](#sobre-mí)
+- [Proyectos Destacados](#proyectos-destacados)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Cómo Instalar](#cómo-instalar)
+- [Cómo Usar](#cómo-usar)
+- [Contribuciones](#contribuciones)
+- [Contacto](#contacto)
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Puedes ver una versión en vivo de mi portfolio [aquí](#).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Sobre Mí
 
-### `npm test`
+Soy un apasionado desarrollador con experiencia en diversos proyectos. Me encanta enfrentar nuevos desafíos y aprender constantemente. Mi objetivo es crear soluciones innovadoras y efectivas a través de la programación.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Proyectos Destacados
 
-### `npm run build`
+- [Proyecto 1]
+- [Proyecto 2]
+- [Proyecto 3]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologías Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML5
+- CSS3
+- JavaScript
+- React
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Cómo Instalar
 
-### `npm run eject`
+Si deseas explorar mi portfolio en tu máquina local, sigue estos pasos:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clona este repositorio en tu máquina local.
+2. Ejecuta `npm install` para instalar las dependencias necesarias.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Cómo Usar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Ejecuta `npm start` para iniciar la aplicación en modo de desarrollo.
+2. Abre tu navegador y visita `http://localhost:3000` para ver mi portfolio.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contribuciones
 
-## Learn More
+¡Las contribuciones son bienvenidas! Si encuentras algún error o tienes sugerencias para mejorar mi portfolio, no dudes en abrir un issue o enviar un pull request. Tu ayuda es muy valiosa y aprecio mucho el trabajo en equipo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contacto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Si deseas ponerte en contacto conmigo, puedes encontrarme en las siguientes redes:
 
-### Code Splitting
+- GitHub: [Github Profile](https://github.com/EduRossB)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/eduardo-ross-barb%C3%A1-1b1784152/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Gracias por visitar mi portfolio! Espero que encuentres interesantes mis proyectos y te sientas inspirado por mi pasión por la programación. Siéntete libre de explorar y conocer más sobre mi trabajo. ¡Hasta pronto!
