@@ -15,6 +15,15 @@
   padding: 45px 25px;
 }
 
+.navBarLogo{
+  width: 20%;
+}
+
+.logoNavBar{
+  width: 50%;
+  filter: invert(56%) sepia(29%) saturate(2765%) hue-rotate(356deg) brightness(103%) contrast(102%);
+}
+
 .navBarLinks {
   width: 70%;
   display: flex;
@@ -45,6 +54,7 @@
 .buttonNavBar:focus,
 .buttonNavBar:hover {
   color: #fff;
+  background-color: transparent;
 }
 
 .buttonNavBar:focus:after,
