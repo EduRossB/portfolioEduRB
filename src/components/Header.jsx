@@ -1,15 +1,17 @@
 import React from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 
 export default function Header() {
   return (
     <Container fluid className="navBar">
-      <div></div>
-      <div className="d-flex justify-content-left">
-      <a>Home</a>
-      <a>About Me</a>
-      <a>Proyects</a>
-      <a>Contact</a>
+      <div className="navBarLogo">
+        <img src="../src/img/logoNavBar.png" alt="logoNavbar"/>
+      </div>
+      <div className="navBarLinks">
+        <button className="buttonNavBar">Home</button>
+        <button className="buttonNavBar">About me</button>
+        <button className="buttonNavBar">Proyects</button>
+        <button className="buttonNavBar">Contact</button>
       </div>
     </Container>
   );
