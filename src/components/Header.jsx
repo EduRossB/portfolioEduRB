@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
-
+import { Container} from "react-bootstrap";
 export default function Header() {
   return (
     <Container fluid className="navBar">
