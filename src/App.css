@@ -6,13 +6,22 @@
 .App {
   width: 100%;
   height: 100%;
-  background-color: #0f0e17;
+  background-color: white;
 }
 
 .navBar {
   display: flex;
   justify-content: space-evenly;
   padding: 45px 25px;
+  position: fixed; /* Aquí está la propiedad que hace que el navbar sea fijo */
+  top: 0; /* Esto asegura que se quede en la parte superior */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 20vh;
+  border-bottom: 2px #ff4e0889 solid;
+ z-index: 999;
+
 }
 
 .navBarLogo{
@@ -30,28 +39,13 @@
   justify-content: end;
 }
 
-.collapseButton{
-  border: white;
-  color: white;
-}
-
-.navbar-toggler {
-  filter: invert(60%) sepia(14%) saturate(6441%) hue-rotate(354deg) brightness(102%) contrast(105%);
-}
-
-.navbar-toggler-icon{
-  color: white;
-  border: solid white 3px;
-  border-radius: 25%;
-}
-
 
 /* NAVBAR BUTTON */
 
 .buttonNavBar {
   padding: 0px 25px;
   font-size: 18px;
-  color: #e1e1e1;
+  color: grey;
   font-family: inherit;
   font-weight: 800;
   cursor: pointer;
@@ -66,7 +60,7 @@
 
 .buttonNavBar:focus,
 .buttonNavBar:hover {
-  color: #fff;
+  color: black;
   background-color: transparent;
 }
 
@@ -84,7 +78,7 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #fff;
+  background-color: black;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
@@ -92,8 +86,67 @@
 
 /*   NAVBAR BUTTON END */
 
-
 .firstPart{
+  width: 100%;
+  height: 100vh;
+  padding-top: 25vh;
+  align-items: center;
+}
+
+.sayHi{
+  color: #FF4C08;
+  font-family: inherit;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.img-responsive{
+  width: 100%;
+  object-fit: cover;
+}
+
+.mernPart{
   display: flex;
   
+}
+
+.presentationText{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+  font-size: 25px;
+display: flex;
+  text-align: center;
+}
+
+
+
+/* ABILITYs CARD*/
+
+.cardAbility{
+  background-color: #ff7f4df2;
+  min-height: 300px;
+  margin-top: 35px;
+  color: white;
+  border-radius: 10%;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+  transition: 300ms;
+}
+
+.cardAbility:hover{
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+
+@media screen and (max-width: 767px) {
+  .firstPart{
+    height: fit-content;
+    
+  }
+  .logoNavBar{
+    width: 100%;
+  }
+  .mernPart{
+    padding: 25px;
+  }
 }
