@@ -8,6 +8,7 @@ import logoReact from "./img/logoReact.png";
 import logoNode from "./img/logoNode.png";
 import developerIMG from "./img/webDeveloperDraw.png";
 import { FaTools, FaChild, FaBookOpen } from "react-icons/fa";
+import Footer from "./components/Footer";
 
 function App() {
   const mernStackInfo = [
@@ -64,8 +65,9 @@ function App() {
             </h2>
           </aside>
         </Container>
+        <hr className="py-5" />
         <div className="text-center">
-          <h2 className="display-3">Abilities</h2>
+          <h2 className="subtitle">Abilities</h2>
           <Container className="row justify-content-evenly">
             <div className="cardAbility col-12 col-md-3 py-3">
               <FaTools className="fs-1" />
@@ -97,22 +99,39 @@ function App() {
               </p>
             </div>
           </Container>
+          <button class="learn-more my-5">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text w-100">Read More About Me</span>
+          </button>
         </div>
-        <Row className="mernPart my-5 justify-content-center">
-          <Col sm={10} md={6} lg={3} className="halfFirst">
-            <MernCard stackInfo={mernStackInfo[0]} />
-          </Col>
-          <Col sm={10} md={6} lg={3} className="halfFirst">
-            <MernCard stackInfo={mernStackInfo[1]} />
-          </Col>
-          <Col sm={10} md={6} lg={3} className="halfFirst">
-            <MernCard stackInfo={mernStackInfo[2]} />
-          </Col>
-          <Col sm={10} md={6} lg={3} className="halfFirst">
-            <MernCard stackInfo={mernStackInfo[3]} />
-          </Col>
-        </Row>
+        <hr/>
+        <Container className="my-5 text-center">
+          <h2 className="subtitle">Stack MERN</h2>
+          <Row className="mernPart my-5 justify-content-center">
+            <Col sm={10} md={6} lg={3} className="halfFirst">
+              <MernCard stackInfo={mernStackInfo[0]} />
+            </Col>
+            <Col sm={10} md={6} lg={3} className="halfFirst">
+              <MernCard stackInfo={mernStackInfo[1]} />
+            </Col>
+            <Col sm={10} md={6} lg={3} className="halfFirst">
+              <MernCard stackInfo={mernStackInfo[2]} />
+            </Col>
+            <Col sm={10} md={6} lg={3} className="halfFirst">
+              <MernCard stackInfo={mernStackInfo[3]} />
+            </Col>
+          </Row>
+          <button class="learn-more stackButtonMore my-5">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text w-100">View projects</span>
+          </button>
+        </Container>
       </Container>
+      <Footer />
     </div>
   );
 }
