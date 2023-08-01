@@ -1,6 +1,8 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import logoNavBar from "../img/logoNavBar.png";
+import { Link, BrowserRouter, Route } from "react-router-dom";
+import Home from '../pages/Home'
 
 export default function Header() {
   return (
@@ -14,12 +16,26 @@ export default function Header() {
           aria-controls="basic-navbar-nav"
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Button className="buttonNavBar">Home</Button>
-            <Button className="buttonNavBar">About me</Button>
-            <Button className="buttonNavBar">Projects</Button>
-            <Button className="buttonNavBar">Contact</Button>
-          </Nav>
+          <BrowserRouter>
+            <Nav className="ms-auto">
+              <Link to="/" className="buttonNavBar">
+                Home
+              </Link>
+              <Link to="/aboutme" className="buttonNavBar">
+                About me
+              </Link>
+              <Link to="/projects" className="buttonNavBar">
+                Projects
+              </Link>
+              <Link to="/contact" className="buttonNavBar">
+                Contact
+              </Link>
+            </Nav>
+            <Route path="/"><Home/></Route>
+            <Route path="/contact"><Contact/><</Route>
+            <Route path="/"><</Route>
+            <Route path="/"></Route>
+          </BrowserRouter>
         </Navbar.Collapse>
       </Container>
     </Navbar>
