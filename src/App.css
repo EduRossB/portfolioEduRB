@@ -7,30 +7,39 @@
   width: 100%;
   height: 100%;
   background-color: white;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  position: relative; 
 }
 
 .navBar {
   display: flex;
   justify-content: space-evenly;
   padding: 45px 25px;
-  position: fixed; /* Aquí está la propiedad que hace que el navbar sea fijo */
-  top: 0; /* Esto asegura que se quede en la parte superior */
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: white;
   height: 20vh;
   border-bottom: 2px #ff4e0889 solid;
- z-index: 999;
-
+  z-index: 999;
 }
 
-.navBarLogo{
+.navBarLogo {
   width: 10%;
 }
 
-.logoNavBar{
+.logoNavBar {
   width: 50%;
-  filter: invert(56%) sepia(29%) saturate(2765%) hue-rotate(356deg) brightness(103%) contrast(102%);
+  filter: invert(56%) sepia(29%) saturate(2765%) hue-rotate(356deg)
+    brightness(103%) contrast(102%);
 }
 
 .navBarLinks {
@@ -38,7 +47,6 @@
   display: flex;
   justify-content: end;
 }
-
 
 /* NAVBAR BUTTON */
 
@@ -86,50 +94,49 @@
 
 /*   NAVBAR BUTTON END */
 
-.subtitle{
+.subtitle {
   font-size: 35px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
   font-style: oblique;
   margin: 25px 0px;
 }
 
-.firstPart{
+.firstPart {
   width: 100%;
   height: 100vh;
-  padding-top: 25vh;
   align-items: center;
 }
 
-.sayHi{
-  color: #FF4C08;
+.sayHi {
+  color: #ff4c08;
   font-family: inherit;
   font-weight: lighter;
   text-align: center;
 }
 
-.img-responsive{
+.img-responsive {
   width: 100%;
   object-fit: cover;
 }
 
-.mernPart{
+.mernPart {
   display: flex;
   justify-content: center;
-  
 }
 
-.presentationText{
-  font-family: 'Courier New', Courier, monospace;
+.presentationText {
+  font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
   font-size: 25px;
-display: flex;
+  display: flex;
   text-align: center;
 }
 
 /*PRESENTATION BUTTON*/
 
- button.learn-more {
+button.learn-more {
   width: 17rem;
   height: auto;
   position: relative;
@@ -143,37 +150,37 @@ display: flex;
   padding: 0;
   font-size: inherit;
   font-family: inherit;
- }
- 
- button.learn-more .circle {
+}
+
+button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #FF8656;
+  background: #ff8656;
   border-radius: 1.625rem;
- }
- 
- button.learn-more .circle .icon {
+}
+
+button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
- }
- 
- button.learn-more .circle .icon.arrow {
+}
+
+button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
- }
- 
- button.learn-more .circle .icon.arrow::before {
+}
+
+button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -183,9 +190,9 @@ display: flex;
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
- }
- 
- button.learn-more .button-text {
+}
+
+button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -199,26 +206,25 @@ display: flex;
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
- }
- 
- button.learn-more:hover .circle {
+}
+
+button.learn-more:hover .circle {
   width: 100%;
- }
- 
- button.learn-more:hover .circle .icon.arrow {
+}
+
+button.learn-more:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
- }
- 
- button.learn-more:hover .button-text {
-  color: #fff;
- }
-/*PRESENTATION BUTTON END*/
+}
 
+button.learn-more:hover .button-text {
+  color: #fff;
+}
+/*PRESENTATION BUTTON END*/
 
 /* ABILITYs CARD*/
 
-.cardAbility{
+.cardAbility {
   background-color: #ff7f4df2;
   min-height: 300px;
   margin-top: 35px;
@@ -228,12 +234,12 @@ display: flex;
   transition: 300ms;
 }
 
-.cardAbility:hover{
+.cardAbility:hover {
   transform: scale(1.1);
   transition: 300ms;
 }
 
-.footer{
+.footer {
   height: 150px;
   width: 100%;
   background-color: black;
@@ -242,29 +248,32 @@ display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 15px 0px;
+  position: absolute; /* Posición absoluta para que el footer se sitúe con respecto al contenedor principal */
+  left: 0;
+  bottom: 0;
 }
 
-.footer h3{
+.footer h3 {
   color: rgba(255, 255, 255, 0.578);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 15px;
   text-align: center;
 }
 
-.iconsContainerFooter{
+.iconsContainerFooter {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.iconsFooter{
+.iconsFooter {
   color: white;
   margin: 0px 15px;
   font-size: 35px;
 }
 
-.iconsFooter:hover{
+.iconsFooter:hover {
   transform: scale(1.2);
   transition: 300ms;
   opacity: 0.8;
@@ -272,14 +281,13 @@ display: flex;
 }
 
 @media screen and (max-width: 767px) {
-  .firstPart{
+  .firstPart {
     height: fit-content;
-    
   }
-  .logoNavBar{
+  .logoNavBar {
     width: 100%;
   }
-  .mernPart{
+  .mernPart {
     padding: 25px;
   }
 }
