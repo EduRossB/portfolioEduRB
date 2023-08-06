@@ -1,6 +1,7 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import logoNavBar from "../img/logoNavBar.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -15,10 +16,10 @@ export default function Header() {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Button className="buttonNavBar">Home</Button>
-            <Button className="buttonNavBar">About me</Button>
-            <Button className="buttonNavBar">Projects</Button>
-            <Button className="buttonNavBar">Contact</Button>
+            <Link to='/' className="buttonNavBar">Home</Link>
+            <Link to='/aboutme' className="buttonNavBar">About me</Link>
+            <Link to='/projects' className="buttonNavBar">Projects</Link>
+            <Link to='/contact' className="buttonNavBar">Contact</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
