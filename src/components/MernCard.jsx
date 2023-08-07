@@ -7,11 +7,11 @@ export default function MernCard(props) {
     <div className="card-container w-100 my-5" >
       <div className="card">
         <div className="front-content" style={{ backgroundImage: `url(${stackInfo.image})`, backgroundRepeat: 'no-repeat'}} >
-          <p className="text-dark">{stackInfo.name}</p>
+          <p>{stackInfo.name}</p>
         </div>
         <div
           className="content"
-          style={{ backgroundColor: stackInfo.color, color: stackInfo.text }}
+          style={{ backgroundColor: stackInfo.color, color: 'white' }}
         >
           <p className="heading">{stackInfo.name}</p>
           <p

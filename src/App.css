@@ -300,7 +300,7 @@ button.learn-more:hover .button-text {
   width: 100%;
 }
 
-.carouselEducation h3, p{
+.carouselEducation h3, .carouselEducation p{
   color: black;
 }
 
