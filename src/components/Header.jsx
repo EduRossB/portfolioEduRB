@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logoNavBar from "../img/logoNavBar.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -16,10 +16,16 @@ export default function Header() {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link to='/' className="buttonNavBar">Home</Link>
-            <Link to='/aboutme' className="buttonNavBar">About me</Link>
-            <Link to='/projects' className="buttonNavBar">Projects</Link>
-            <Link to='/contact' className="buttonNavBar">Contact</Link>
+            <NavLink className={({ isActive, isPending }) =>
+                      isActive
+                        ? "active buttonNavBar"
+                        : isPending
+                        ? "pending buttonNavBar"
+                        : ""
+                    } to='/'>Home</NavLink>
+            <Link activeClassName="active" to='/aboutme' className="buttonNavBar">About me</Link>
+            <Link activeClassName="active" to='/projects' className="buttonNavBar">Projects</Link>
+            <Link activeClassName="active" to='/contact' className="buttonNavBar">Contact</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

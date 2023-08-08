@@ -92,6 +92,11 @@
   transition-property: width, left;
 }
 
+.active {
+  color: rgba(0, 0, 0, 0.688);
+  transform: scale(1.1);
+}
+
 /*   NAVBAR BUTTON END */
 
 .subtitle {
@@ -459,6 +464,85 @@
 
 /* END Projects Page  */
 
+/* Contact Page */
+
+.mainContainerContact {
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 50px 0px;
+}
+
+.top,
+.bottom {
+  gap: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.itemContact {
+  width: 250px;
+  height: 30vh;
+  background-color: white;
+  border: black 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+  transition: 400ms;
+  box-shadow: -2px 1px 24px -7px rgba(0, 0, 0, 0.58) inset;
+  -webkit-box-shadow: -2px 1px 24px -7px rgba(0, 0, 0, 0.58) inset;
+  -moz-box-shadow: -2px 1px 24px -7px rgba(0, 0, 0, 0.58) inset;
+}
+
+.item1 {
+  border-radius: 30vh 10px 10px 10px;
+  color: #14191e;
+}
+
+.item2 {
+  border-radius: 10px 30vh 10px 10px;
+  color: #0077b5;
+}
+.item3 {
+  border-radius: 10px 10px 10px 30vh;
+  color: #d6249f;
+}
+.item4 {
+  border-radius: 10px 10px 30vh 10px;
+  color: #4267b2;
+}
+
+.itemContact:hover {
+  transform: scale(1.09);
+  transition: 500ms;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.item1:hover {
+  background-color: #14191e;
+  color: white;
+}
+
+.item2:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
+.item3:hover {
+  background-color: #cc39a4;
+  color: white;
+}
+
+.item4:hover {
+  background-color: #4267b2;
+  color: white;
+}
+
+/* Contact Page END */
+
 @media screen and (max-width: 767px) {
   .firstPart {
     height: fit-content;
@@ -468,5 +552,9 @@
   }
   .mernPart {
     padding: 25px;
+  }
+  .itemContact {
+    width: 200px;
+    height: 25vh;
   }
 }
