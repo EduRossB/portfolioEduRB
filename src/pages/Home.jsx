@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MernCard from "../components/MernCard";
 import logoMongo from "../img/logoMongo.png";
 import logoExpress from "../img/logoExpress.png";
@@ -95,12 +96,12 @@ export default function Home() {
               </p>
             </div>
           </Container>
-          <button class="learn-more my-5">
+          <Link to={'/aboutme#top'} class="learn-more my-5">
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>
             <span class="button-text w-100">Read More About Me</span>
-          </button>
+          </Link>
         </div>
         <hr />
         <Container className="my-5 text-center">
@@ -119,12 +120,12 @@ export default function Home() {
               <MernCard stackInfo={mernStackInfo[3]} />
             </Col>
           </Row>
-          <button class="learn-more stackButtonMore my-5">
+          <Link to={'/projects'} class="learn-more stackButtonMore my-5">
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>
             <span class="button-text w-100">View projects</span>
-          </button>
+          </Link>
         </Container>
       </Container>
     </div>
