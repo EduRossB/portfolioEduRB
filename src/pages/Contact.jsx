@@ -5,7 +5,6 @@ import { FaGithub, FaLinkedin, FaInstagram, FaFacebookF } from "react-icons/fa";
 export default function Contact() {
   return (
     <Container fluid className="row m-0 p-0 justify-content-center">
-      <h1 className="subtitle w-100">Contact</h1>
       <Container className="mainContainerContact">
         <aside className="top">
           <article className="itemContact item1"><FaGithub/></article>

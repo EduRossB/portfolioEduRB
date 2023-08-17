@@ -7,7 +7,7 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  padding-top: 20vh;
+  padding-top: 25vh;
   padding-bottom: 20vh;
 }
 
@@ -27,7 +27,6 @@
   left: 0;
   width: 100%;
   background-color: white;
-  height: 20vh;
   border-bottom: 2px #ff4e0889 solid;
   z-index: 999;
 }
@@ -93,7 +92,7 @@
 }
 
 .active {
-  color: rgba(0, 0, 0, 0.688);
+  color: rgba(0, 0, 0, 0.879);
   transform: scale(1.1);
 }
 
@@ -286,16 +285,19 @@
 }
 
 .textAboutMe {
-  text-align: center;
   display: flex;
+  text-align: center;
   align-items: center;
   font-size: 25px;
+  padding-bottom: 50px;
 }
 
 .myPhoto {
   border: 4px solid black;
   border-radius: 10%;
   padding: 0px;
+  height: 80%;
+  object-fit: cover;
 }
 
 .carouselEducation {
@@ -346,10 +348,12 @@
 /* Projects Page  */
 
 .projectsGroup {
-  background-color: #ff9a03;
-  min-height: 40vh;
+  background-color: #ff9a03b5;
+  min-height: 50vh;
   margin: 0;
   padding: 0;
+  border: 2px solid black;
+  border-radius: 10% 10% 0 0;
 }
 
 .projectsGroup h4 {
@@ -470,7 +474,7 @@
   gap: 0.5em;
   display: flex;
   flex-direction: column;
-  margin: 0px 0px 50px 0px;
+  margin: 30px 0px 50px 0px;
 }
 
 .top,
@@ -482,7 +486,7 @@
 }
 
 .itemContact {
-  width: 250px;
+  width: 15vw;
   height: 30vh;
   background-color: white;
   border: black 1px solid;
@@ -556,5 +560,8 @@
   .itemContact {
     width: 200px;
     height: 25vh;
+  }
+  .myPhoto {
+    height: auto;
   }
 }

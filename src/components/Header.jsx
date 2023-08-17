@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logoNavBar from "../img/logoNavBar.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 export default function Header() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <Navbar expand="lg" className="navBar">
       <Container>
@@ -16,16 +20,54 @@ export default function Header() {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <NavLink className={({ isActive, isPending }) =>
-                      isActive
-                        ? "active buttonNavBar"
-                        : isPending
-                        ? "pending buttonNavBar"
-                        : ""
-                    } to='/'>Home</NavLink>
-            <Link activeClassName="active" to='/aboutme' className="buttonNavBar">About me</Link>
-            <Link activeClassName="active" to='/projects' className="buttonNavBar">Projects</Link>
-            <Link activeClassName="active" to='/contact' className="buttonNavBar">Contact</Link>
+            <NavLink
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? "active buttonNavBar"
+                  : isPending
+                  ? "pending buttonNavBar"
+                  : "pending buttonNavBar"
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? "active buttonNavBar"
+                  : isPending
+                  ? "pending buttonNavBar"
+                  : "pending buttonNavBar"
+              }
+              to="/aboutme"
+            >
+              About me
+            </NavLink>
+            <NavLink
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? "active buttonNavBar"
+                  : isPending
+                  ? "pending buttonNavBar"
+                  : "pending buttonNavBar"
+              }
+              to="/projects"
+            >
+              Projects
+            </NavLink>
+            <NavLink
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? "active buttonNavBar"
+                  : isPending
+                  ? "pending buttonNavBar"
+                  : "pending buttonNavBar"
+              }
+              to="/contact"
+            >
+              Contact
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
