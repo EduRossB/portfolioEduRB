@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logoNavBar from "../img/logoNavBar.png";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function Header() {
   const { pathname } = useLocation();
