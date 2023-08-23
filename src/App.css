@@ -481,7 +481,7 @@
 
 .mainContainerContact {
   display: flex;
-  margin: 30px 0px 50px 0px;
+  margin: 0px 0px 50px 0px;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
@@ -572,6 +572,9 @@
 /* Contact Page END */
 
 @media screen and (max-width: 767px) {
+  .App{
+    padding-top: 18vh;
+  }
   .firstPart {
     height: fit-content;
   }
