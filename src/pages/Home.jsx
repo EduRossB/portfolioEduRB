@@ -65,7 +65,7 @@ export default function Home() {
         <hr className="py-5" />
         <div className="text-center">
           <h2 className="subtitle">Abilities</h2>
-          <Container className="row justify-content-evenly">
+          <Container className="row justify-content-evenly mx-1">
             <div className="cardAbility col-12 col-md-3 py-3">
               <FaTools className="fs-1" />
               <h4 className="pt-3">Conflict resolution</h4>

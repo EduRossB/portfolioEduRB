@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function Projects() {
   return (
     <Container>
-      <Container className="row justify-content-center text-center text-light">
+      <Container className="row justify-content-center text-center text-light mx-1">
         <section className="projectsGroup col-sm-11 my-5">
           <h4 className="fs-5 w-100">Group Projects</h4>
           <div className="row w-100 p-0 m-0">
