@@ -31,20 +31,20 @@ export default function Contact() {
       </Container>
       <Container className="col-12 col-lg-6 my-3">
         <aside className="top">
-          <article className="itemContact item1">
+          <a href="https://github.com/EduRossB" target="_blank" rel="noreferrer" className="itemContact item1">
             <FaGithub />
-          </article>
-          <article className="itemContact item2">
+          </a>
+          <a href="https://www.linkedin.com/in/eduardo-ross-barb%C3%A1-1b1784152/" target="_blank" rel="noreferrer" className="itemContact item2">
             <FaLinkedin />
-          </article>
+          </a>
         </aside>
         <aside className="bottom">
-          <article className="itemContact item3">
+          <a href="https://www.instagram.com/edu.rossb/" target="_blank" rel="noreferrer" className="itemContact item3">
             <FaInstagram />
-          </article>
-          <article className="itemContact item4">
+          </a>
+          <a href="https://www.facebook.com/edu.rossbarba" target="_blank" rel="noreferrer" className="itemContact item4">
             <FaFacebookF />
-          </article>
+          </a>
         </aside>
       </Container>
     </Container>
