@@ -6,15 +6,18 @@ import CarouselsEducation from "../components/CarouselsEducation";
 export default function AboutMe() {
   return (
     <Container className="d-flex justify-content-center flex-wrap text-center">
-      <h1 id="top" className="text-center subtitle">About Me</h1>
+      <h1 id="top" className="text-center subtitle">
+        About Me
+      </h1>
       <section className="d-flex row w-100 py-3 justify-content-center">
         <p className="col-sm-12 col-lg-8 px-5 textAboutMe">
-          Hello, my full name is Juan Eduardo Ross Barbá, and I am a passionate
-          web developer born in Tucuman, Argentina. During the pandemic, my
-          curiosity for the world of web development awakened, which led me to
-          pause my studies in Business Administration at the National University
-          of Tucuman to begin my training in this beautiful world of
-          development.
+          Hello there! I'm Juan Eduardo Ross Barbá, a dedicated web developer
+          hailing from Tucuman, Argentina. As fate would have it, the pandemic
+          ignited my curiosity for the realm of web development. This prompted
+          me to temporarily set aside my Business Administration studies at the
+          National University of Tucuman and dive headfirst into the captivating
+          world of coding. Crafting digital solutions that delight users is my
+          ultimate goal.
         </p>
         <img
           src={myPhoto}
@@ -36,10 +39,20 @@ export default function AboutMe() {
           </ul>
           <ul className="col-sm-12 col-lg-6">
             <h4>Others</h4>
-            <li>Business Administration <strong>National University of Tucuman</strong> (2016-2019)</li>
-            <li>Introduction to Digital Marketing <strong>Google</strong> (2020)</li>
-            <li>Digitalize Your Business <strong>Google</strong> (2020)</li>
-            <li>Workplace Communication in the 21st Century <strong>University of California</strong> (2020)</li>
+            <li>
+              Business Administration{" "}
+              <strong>National University of Tucuman</strong> (2016-2019)
+            </li>
+            <li>
+              Introduction to Digital Marketing <strong>Google</strong> (2020)
+            </li>
+            <li>
+              Digitalize Your Business <strong>Google</strong> (2020)
+            </li>
+            <li>
+              Workplace Communication in the 21st Century{" "}
+              <strong>University of California</strong> (2020)
+            </li>
           </ul>
         </Container>
       </section>

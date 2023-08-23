@@ -298,7 +298,16 @@
   padding: 0px;
   height: 80%;
   object-fit: cover;
+  filter: grayscale(70%);
+  transition: 300ms;
 }
+
+.myPhoto:hover{
+  filter: grayscale(0%);
+  transform: scale(1.03);
+  transition: 300ms;
+}
+
 
 .carouselEducation {
   height: 450px;
