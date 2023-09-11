@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebookF } from "react-icons/fa";
+import sendComent from "../controllers/coments";
 
 export default function Contact() {
+  const [name, setName] = useState('')
+  const [coment, setComent] = useState('')
+
+  const handleSubmit = async (event) =>{
+    event.preventDefault();
+    sendComent(name, coment)
+    setComent('')
+    setName('')
+  }
+
   return (
     <Container fluid className="mainContainerContact row">
       <Container className="col-12 col-lg-6 my-3">
@@ -44,10 +55,10 @@ export default function Contact() {
         </aside>
       </Container>
       <Container className="col-12 col-lg-6 my-3 contactForm">
-        <Form className="w-75">
+        <Form onSubmit={handleSubmit} className="w-75">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label className="fs-3 text-light display-5">Name</Form.Label>
-            <Form.Control type="email" placeholder="Enter your name" />
+            <Form.Control type="text" minLength={3} value={name} maxLength={45} onChange={(e)=>setName(e.target.value)} placeholder="Enter your name" />
             <Form.Text className="text-muted">
               It's not necessary to provide your real name.
             </Form.Text>
@@ -61,7 +72,11 @@ export default function Contact() {
             <Form.Control
               as="textarea"
               style={{ maxHeight: "150px" }}
+              minLength={3}
+              maxLength={250}
+              value={coment}
               placeholder="All recommendations are welcome"
+              onChange={(e)=> setComent(e.target.value)}
             />
           </Form.Group>
           <Button variant="light" className="mt-4" type="submit">
